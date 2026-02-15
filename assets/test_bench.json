@@ -1,0 +1,416 @@
+[
+  {
+    "id": 79,
+    "topic": "Seating Arrangements (Linear, Circular)",
+    "question": "B, D, M, K, P, Q, W and H are sitting around a circle facing at the centre. M is to the immediate right of B who is 4th to the right of K. P is 2nd to the left of B and is 4th to the right of W. Q is 2nd to the right of D who is 2nd to the right of H.\n\n79. Who is 3rd to the right of B?",
+    "choices": [
+      "A) W",
+      "B) M",
+      "C) K",
+      "D) H"
+    ],
+    "answer": "D",
+    "explanation": "Arrangement (CCW from B): B(1) -> M(2) -> Q(3) -> W(4) -> D(5) -> K(6) -> H(7) -> P(8). Counting 3 positions to the right (CCW) from B(1): 1->2->3->4. The person at position 4 is H."
+  },
+  {
+    "id": 80,
+    "topic": "Seating Arrangements (Linear, Circular)",
+    "question": "B, D, M, K, P, Q, W and H are sitting around a circle facing at the centre. [Refer to context].\n\n80. Which of the following represents the immediate neighbours of D?",
+    "choices": [
+      "A) KH",
+      "B) PH",
+      "C) KQ",
+      "D) PK"
+    ],
+    "answer": "D",
+    "explanation": "Based on the arrangement, D sits between P and K. Therefore, the immediate neighbours are P and K."
+  },
+  {
+    "id": 81,
+    "topic": "Seating Arrangements (Linear, Circular)",
+    "question": "B, D, M, K, P, Q, W and H are sitting around a circle facing at the centre. [Refer to context].\n\n81. Who is 3rd to the right of W?",
+    "choices": [
+      "A) P",
+      "B) D",
+      "C) K",
+      "D) R"
+    ],
+    "answer": "B",
+    "explanation": "Arrangement sequence: B, M, Q, H, K, D, P, W. Moving 3rd to the right (Anti-Clockwise) from W leads to D."
+  },
+  {
+    "id": 1,
+    "topic": "Seating Arrangements (Linear, Circular)",
+    "question": "Q. 1 Six friends—A, B, C, D, E, and F—are sitting in a row. B is sitting to the right of A but left of D. E is sitting to the right of C but left of F. Who is sitting at the extreme right?",
+    "choices": [
+      "A) B",
+      "B) C",
+      "C) F",
+      "D) E"
+    ],
+    "answer": "C",
+    "explanation": "Given the constraints A-B-D and C-E-F, and asking for the extreme right, F is the only candidate among the options that can be at the end of the line."
+  },
+  {
+    "id": 3,
+    "topic": "Seating Arrangements (Linear, Circular)",
+    "question": "Q. 3 Five boxes (A, B, C, D, E) are stacked on top of each other. Box D is immediately below box B. Box A is above box C but not at the top. Box E is immediately above box A. Which box is at the bottom?",
+    "choices": [
+      "A) D",
+      "B) C",
+      "C) B",
+      "D) E"
+    ],
+    "answer": "B",
+    "explanation": "The stacking order consistent with all clues is B, D, E, A, C. Therefore, Box C is at the bottom."
+  },
+  {
+    "id": 4,
+    "topic": "Seating Arrangements (Linear, Circular)",
+    "question": "Q. 4 Six books—W, X, Y, Z, P, and Q—are arranged neatly on a shelf. Z is to the immediate left of W. X is between Y and Q. P is to the left of Q but not adjacent to Z. What is the order from left to right?",
+    "choices": [
+      "A) P, Z, W, Y, X, Q",
+      "B) P, W, Z, Y, Q, X",
+      "C) P, X, Z, W, Y, Q",
+      "D) P, Y, X, Q, Z, W"
+    ],
+    "answer": "D",
+    "explanation": "Option D satisfies all conditions: Z is left of W (ZW), X is between Y and Q (YXQ), and P is left of Q without being adjacent to Z."
+  },
+  {
+    "topic": "Syllogisms",
+    "id": "Q1",
+    "question": "Statements:\nAll A are B\nSome B are C\nNo C is D\nSome D are E\nAll E are A\n\nConclusions:\nI. Some A are not C\nII. Some B are not D\nIII. Some E are not C",
+    "choices": {
+      "A": "I only",
+      "B": "I & II",
+      "C": "I & III",
+      "D": "I, II & III"
+    },
+    "explanation": "Since some D ⊆ A and no D overlaps C, those A (and E within A) cannot be C, forcing I, II, and III."
+  },
+  {
+    "topic": "Syllogisms",
+    "id": "Q2",
+    "question": "Statements:\nOnly X are Y\nSome Y are Z\nNo W is X\n\nWhich must be false?",
+    "choices": {
+      "A": "Some Y are X",
+      "B": "Some Z are not X",
+      "C": "All Y are W",
+      "D": "No W is Y"
+    },
+    "explanation": "Since Only X are Y (All Y are X) and No W is X, it follows that No Y is W. Therefore, 'All Y are W' must be false."
+  },
+  {
+    "topic": "Seating Arrangements (Linear, Circular)",
+    "id": "Q3",
+    "question": "8 persons A–H sit in a circle facing the center. G sits opposite B. D sits immediate right of B. E sits immediate left of B. H sits opposite D. C sits opposite E. A sits immediate right of H. F sits in the remaining seat.\n\nWho is opposite B?",
+    "choices": {
+      "A": "D",
+      "B": "E",
+      "C": "G",
+      "D": "H"
+    },
+    "explanation": "Based on the setup, G is explicitly placed opposite B."
+  },
+  {
+    "topic": "Seating Arrangements (Linear, Circular)",
+    "id": "Q4",
+    "question": "8 persons A–H sit in a circle facing the center. G sits opposite B. D sits immediate right of B. E sits immediate left of B. H sits opposite D. C sits opposite E. A sits immediate right of H. F sits in the remaining seat.\n\nHow many valid circular arrangements exist?",
+    "choices": {
+      "A": "0",
+      "B": "1",
+      "C": "2",
+      "D": "4"
+    },
+    "explanation": "The constraints are strict and define exact positions for all 8 people relative to B, resulting in exactly one valid arrangement."
+  },
+  {
+    "topic": "Family tree logic",
+    "id": "Q5",
+    "question": "The woman is the sister of the son of my father’s father’s only son. She is my:",
+    "choices": {
+      "A": "Sister",
+      "B": "Cousin",
+      "C": "Aunt",
+      "D": "Self"
+    },
+    "explanation": "Father’s father’s only son is my father. The son of my father is my brother. The sister of my brother is my sister."
+  },
+  {
+    "topic": "Family tree logic",
+    "id": "Q6",
+    "question": "Statements:\nP is mother of Q\nR is only brother of Q\nS is father of P\nT is wife of S’s only son\nU is daughter of T\n\nU is related to R as:",
+    "choices": {
+      "A": "Sister",
+      "B": "Cousin",
+      "C": "Aunt",
+      "D": "Niece"
+    },
+    "explanation": "S’s only son is P’s brother. T is the wife of P’s brother. U (daughter of T) is the child of P’s brother (R’s uncle). Thus, U is R’s cousin."
+  },
+  {
+    "topic": "Mixed Series (Alphanumeric)",
+    "id": "Q7",
+    "question": "A3, D12, J60, V360, ?, ?",
+    "choices": {
+      "A": "S2520, G20160",
+      "B": "T2520, P20160",
+      "C": "S2520, H20160",
+      "D": "T2520, G20160"
+    },
+    "explanation": "Numbers multiply by consecutive integers (x4, x5, x6, x7, x8). Letters increase by doubling differences (+3, +6, +12, +24, +48). V(22)+24=T(20); T(20)+48=P(16)."
+  },
+  {
+    "topic": "Mixed Series (Alphanumeric)",
+    "id": "Q8",
+    "question": "Z2B, X6E, T24J, N120Q, ?, ?",
+    "choices": {
+      "A": "F720Z, V5040K",
+      "B": "G720Z, T5040K",
+      "C": "F720Y, U5040K",
+      "D": "G720Y, U5040K"
+    },
+    "explanation": "Numbers are factorials (2!, 3!, 4!, 5!, 6!, 7!). First letters: -2, -4, -6, -8(F), -10(V). Last letters: +3, +5, +7, +9(Z), +11(K)."
+  },
+  {
+    "id": 1,
+    "topic": "Syllogisms",
+    "question": "Statements:\n1. All Liquids are Fluids.\n2. Only a few Fluids are Clear.\n3. No Clear is a Solid.\n\nConclusions:\nI. Some Liquids are not Clear is a possibility.\nII. All Fluids can never be Solid.",
+    "choices": ["A) Only I follows", "B) Only II follows", "C) Both I and II follow", "D) Neither I nor II follows"],
+    "answer": "C",
+    "explanation": "Conclusion I: Since the relation between Liquid and Clear is not defined restrictedly, it is possible that some Liquids are not Clear. Conclusion II: Since 'Only a few Fluids are Clear' and 'No Clear is Solid', there is a portion of Fluids (the Clear ones) that can never be Solid. Therefore, All Fluids can never be Solid is true."
+  },
+  {
+    "id": 2,
+    "topic": "Syllogisms",
+    "question": "Statements:\n1. No P is Q.\n2. All Q are R.\n3. Some R are not S.\n\nConclusions:\nI. Some R are definitely not P.\nII. All S can be P.",
+    "choices": ["A) Only I follows", "B) Only II follows", "C) Both I and II follow", "D) Neither I nor II follows"],
+    "answer": "C",
+    "explanation": "Conclusion I: Since No P is Q and All Q are R, the portion of R that contains Q can never be P. Thus, some R are not P is true. Conclusion II: There is no restriction between S and P. Even if some R are not S, the circle of S can theoretically sit entirely inside P without violating statements."
+  },
+  {
+    "id": 3,
+    "topic": "Syllogisms",
+    "question": "Statements:\n1. Only Graphs are Charts.\n2. Some Graphs are Tables.\n3. Some Tables are not Data.\n\nConclusions:\nI. Some Charts being Data is a possibility.\nII. All Tables can be Graphs.",
+    "choices": ["A) Only I follows", "B) Only II follows", "C) Both I and II follow", "D) Neither I nor II follows"],
+    "answer": "B",
+    "explanation": "'Only Graphs are Charts' means All Charts are Graphs, AND Charts cannot belong to any other set. Therefore, Charts cannot be Data. Conclusion I is false. Conclusion II: Some Graphs are Tables implies an intersection. There is no restriction preventing All Tables from being inside Graphs."
+  },
+  {
+    "id": 4,
+    "topic": "Syllogisms",
+    "question": "Statements:\n1. All Clouds are Rain.\n2. No Rain is Storm.\n3. All Thunder are Storm.\n\nConclusions:\nI. No Cloud is Thunder.\nII. Some Rain are not Thunder.",
+    "choices": ["A) Only I follows", "B) Only II follows", "C) Both I and II follow", "D) Neither I nor II follows"],
+    "answer": "C",
+    "explanation": "I: If All Clouds are Rain and No Rain is Storm, then No Cloud is Storm. Since All Thunder are Storm, No Cloud can be Thunder. True. II: Since No Rain is Storm and All Thunder are Storm, Rain and Thunder are disjoint. Therefore, All Rain are 'not Thunder', which implies Some Rain are not Thunder. True."
+  },
+  {
+    "id": 5,
+    "topic": "Syllogisms",
+    "question": "Statements:\n1. Some Apples are not Bananas.\n2. All Bananas are Cherries.\n3. Some Cherries are Dates.\n\nConclusions:\nI. All Apples being Cherries is a possibility.\nII. Some Dates are not Bananas.",
+    "choices": ["A) Only I follows", "B) Only II follows", "C) Both I and II follow", "D) Neither I nor II follows"],
+    "answer": "A",
+    "explanation": "I: 'Some Apples are not Bananas' allows the possibility that all Apples fall inside Cherries (as long as they don't touch the Banana circle fully). True. II: We know Some Cherries are Dates, but we don't know the specific relation between Dates and Bananas. It is possible all Dates are Bananas. False."
+  },
+  {
+    "id": 6,
+    "topic": "Syllogisms",
+    "question": "Statements:\n1. 0% of A are B.\n2. 100% of C are A.\n3. 99% of C are D.\n\nConclusions:\nI. Some D are not B.\nII. No C is B.",
+    "choices": ["A) Only I follows", "B) Only II follows", "C) Both I and II follow", "D) Neither I nor II follows"],
+    "answer": "C",
+    "explanation": "I: Since 99% of C are D and All C are A (and No A is B), the intersection of C and D (which must exist) is inside A. Everything inside A is not B. So, Some D are not B. True. II: All C are A, and No A is B, so No C is B. True."
+  },
+  {
+    "id": 7,
+    "topic": "Syllogisms",
+    "question": "Statements:\n1. Only a few Red are Blue.\n2. No Blue is Green.\n3. All Yellow are Green.\n\nConclusions:\nI. Some Red are not Green.\nII. No Yellow is Blue.",
+    "choices": ["A) Only I follows", "B) Only II follows", "C) Both I and II follow", "D) Neither I nor II follows"],
+    "answer": "C",
+    "explanation": "I: 'Only a few Red are Blue' implies some Red are Blue. Those specific Red items (that are Blue) cannot be Green because No Blue is Green. Thus, Some Red are not Green. True. II: All Yellow are Green and No Green is Blue implies No Yellow is Blue. True."
+  },
+  {
+    "id": 8,
+    "topic": "Syllogisms",
+    "question": "Statements:\n1. All Kites are Birds.\n2. Some Birds are Planes.\n3. No Plane is a Rocket.\n\nConclusions:\nI. Some Kites are Rockets.\nII. Some Birds are not Rockets.",
+    "choices": ["A) Only I follows", "B) Only II follows", "C) Both I and II follow", "D) Neither I nor II follows"],
+    "answer": "B",
+    "explanation": "I: There is no direct link between Kites and Rockets. Possible, but not definite. False. II: Some Birds are Planes. No Plane is a Rocket. Therefore, the Birds that are Planes cannot be Rockets. True."
+  },
+  {
+    "id": 9,
+    "topic": "Syllogisms",
+    "question": "Statements:\n1. All Logic is Magic.\n2. Some Magic is Tragic.\n3. All Tragic is Static.\n\nConclusions:\nI. Some Static is Logic.\nII. Some Magic is Static.",
+    "choices": ["A) Only I follows", "B) Only II follows", "C) Both I and II follow", "D) Neither I nor II follows"],
+    "answer": "B",
+    "explanation": "I: We have Logic -> Magic and Tragic -> Static (with intersection Magic/Tragic). There is no guaranteed overlap between Logic and Static. False. II: Some Magic is Tragic and All Tragic is Static implies the intersection of Magic and Tragic lies inside Static. Thus, Some Magic is Static. True."
+  },
+  {
+    "id": 10,
+    "topic": "Syllogisms",
+    "question": "Statements:\n1. No Month is Year.\n2. Some Years are Decades.\n3. All Decades are Centuries.\n\nConclusions:\nI. Some Centuries are not Month.\nII. Some Decades are Month.",
+    "choices": ["A) Only I follows", "B) Only II follows", "C) Both I and II follow", "D) Neither I nor II follows"],
+    "answer": "A",
+    "explanation": "I: Some Centuries are Decades. Some Decades (actually all) are Year-related (Some Years are Decades). Wait, Some Years are Decades, All Decades are Centuries. The intersection of Year/Decade/Century exists. Since No Year is Month, the Centuries that are Years cannot be Months. True. II: No definite link between Decade and Month. False."
+  },
+  {
+    "id": 21,
+    "topic": "Family tree logic",
+    "question": "A is the mother of B. C is the son of A. D is the brother of E. E is the daughter of B. Who is the grandmother of D?",
+    "choices": ["A) A", "B) B", "C) C", "D) E"],
+    "answer": "A",
+    "explanation": "A is mother of B. B is parent of E (E is daughter). D is brother of E, so D is son of B. A is the mother of B (D's parent). Thus A is the grandmother of D."
+  },
+  {
+    "id": 22,
+    "topic": "Family tree logic",
+    "question": "Introducing a man, a woman said, 'His wife is the only daughter of my father.' How is that man related to the woman?",
+    "choices": ["A) Brother", "B) Father-in-law", "C) Husband", "D) Maternal Uncle"],
+    "answer": "C",
+    "explanation": "'Only daughter of my father' implies the woman herself (since she is female). So, 'His wife is ME.' Therefore, the man is her Husband."
+  },
+  {
+    "id": 23,
+    "topic": "Family tree logic",
+    "question": "P is the brother of Q and R. S is R's mother. T is P's father. Which of the following statements cannot be definitely true?",
+    "choices": ["A) T is Q's father", "B) S is P's mother", "C) P is S's son", "D) Q is T's son"],
+    "answer": "D",
+    "explanation": "P, Q, R are siblings. T is father, S is mother. A) True. B) True. C) True (P is brother, so Male). D) Q is T's son? Q's gender is not specified. Q could be a daughter. Thus, D cannot be definitely true."
+  },
+  {
+    "id": 24,
+    "topic": "Family tree logic",
+    "question": "Looking at a portrait of a man, Harsh said, 'His mother is the wife of my father's son. Brothers and sisters I have none.' At whose portrait was Harsh looking?",
+    "choices": ["A) His son", "B) His cousin", "C) His uncle", "D) His nephew"],
+    "answer": "A",
+    "explanation": "'My father's son' with no siblings is Harsh himself. 'His (Portrait's) mother is the wife of Harsh.' So the Portrait's mother is Harsh's wife. Therefore, the Portrait is of Harsh's child. Since it is a 'portrait of a man', it is his son."
+  },
+  {
+    "id": 25,
+    "topic": "Family tree logic",
+    "question": "If A + B means A is the father of B; A - B means A is the brother of B; A % B means A is the wife of B and A x B means A is the mother of B, which of the following shows that M is the maternal grandmother of T?",
+    "choices": ["A) M x N % S + T", "B) M x N - S % T", "C) M x S - N + T", "D) M x N x S"],
+    "answer": "A",
+    "explanation": "Maternal grandmother means Mother's Mother. M must be mother of (Mother/Parent of T). A) M x N (M mother of N). N % S (N wife of S). S + T (S father of T). If N is wife of S and S is father of T, N is mother of T. M is mother of N. So M is maternal grandmother. True."
+  },
+  {
+    "id": 26,
+    "topic": "Family tree logic",
+    "question": "A family consists of six members P, Q, R, S, T and U. There are two married couples. Q is a doctor and the father of T. U is grandfather of R and is a contractor. S is grandmother of T and is a housewife. There is one doctor, one contractor, one nurse, one housewife and two students in the family. Who is the husband of P?",
+    "choices": ["A) R", "B) U", "C) Q", "D) S"],
+    "answer": "C",
+    "explanation": "Couples: U (Grandfather) & S (Grandmother). Q (Father of T) must be married. Generation 2 is Q and Spouse. Generation 3 is T and R. U/S are parents of Q. Who is Q's wife? P is the only remaining adult (T, R are likely students/children). So P is wife of Q. Husband of P is Q."
+  },
+  {
+    "id": 27,
+    "topic": "Family tree logic",
+    "question": "Deepak said to Nitin, 'That boy playing with the football is the younger of the two brothers of the daughter of my father's wife.' How is the boy playing football related to Deepak?",
+    "choices": ["A) Son", "B) Brother", "C) Cousin", "D) Brother-in-law"],
+    "answer": "B",
+    "explanation": "'My father's wife' = Mother. 'Daughter of my mother' = Sister. 'Brothers of my sister' = My brothers. The boy is the younger of the brothers. So he is Deepak's brother."
+  },
+  {
+    "id": 28,
+    "topic": "Family tree logic",
+    "question": "P is the son of Q while Q and R are the sisters to one another. T is the mother of R. If S is the son of T, which of the following statements is correct?",
+    "choices": ["A) T is the brother of Q", "B) S is the cousin of P", "C) Q and S are sisters", "D) S is the maternal uncle of P"],
+    "answer": "D",
+    "explanation": "Q and R are sisters. T is mother of R (and Q). S is son of T. So S is brother of Q and R. P is son of Q. S is the brother of P's mother. S is Maternal Uncle."
+  },
+  {
+    "id": 29,
+    "topic": "Family tree logic",
+    "question": "X is the husband of Y. W is the daughter of X. Z is the husband of W. N is the daughter of Z. What is the relationship of N to Y?",
+    "choices": ["A) Cousin", "B) Niece", "C) Daughter", "D) Granddaughter"],
+    "answer": "D",
+    "explanation": "Y is wife of X. W is daughter of X & Y. Z is husband of W. N is daughter of W & Z. N is the child of Y's daughter. N is Granddaughter."
+  },
+  {
+    "id": 30,
+    "topic": "Family tree logic",
+    "question": "In a family, B is the father of K. K has two children. K is the brother of R. R is the daughter of P. A is the granddaughter of P. S is the father of A. How is S related to K?",
+    "choices": ["A) Son", "B) Brother-in-law", "C) Brother", "D) Son-in-law"],
+    "answer": "B",
+    "explanation": "P (Mother) & B (Father). Children: K (Son), R (Daughter). A is granddaughter of P. S is father of A. A could be child of K or R. If A is child of K, S must be K (Father). But S is 'father of A', so S=K. If S=K, relation is 'Self'. Not in choices. So A is child of R. S is father of A, so S is husband of R. S is the husband of K's sister. S is Brother-in-law to K."
+  },
+  {
+    "id": 31,
+    "topic": "Mixed Series (Alphanumeric)",
+    "question": "Find the missing term: 2Z5, 7Y7, 14X9, 23W11, 34V13, ?",
+    "choices": ["A) 47U15", "B) 45U15", "C) 47V15", "D) 45U17"],
+    "answer": "A",
+    "explanation": "Numbers 1st: 2, 7, 14, 23, 34. Differences: +5, +7, +9, +11. Next +13. 34+13 = 47. Letters: Z, Y, X, W, V. Backwards -1. Next is U. Numbers 3rd: 5, 7, 9, 11, 13. Odds +2. Next 15. Result: 47U15."
+  },
+  {
+    "id": 32,
+    "topic": "Mixed Series (Alphanumeric)",
+    "question": "Which term comes next? A-26, E-21, I-16, M-11, ?",
+    "choices": ["A) Q-5", "B) Q-6", "C) P-6", "D) R-5"],
+    "answer": "B",
+    "explanation": "Letters: A (+4) E (+4) I (+4) M (+4) Q. Numbers: 26 (-5) 21 (-5) 16 (-5) 11 (-5) 6. Result: Q-6."
+  },
+  {
+    "id": 33,
+    "topic": "Mixed Series (Alphanumeric)",
+    "question": "Complete the series: P5QR, P4QS, P3QT, P2QU, ?",
+    "choices": ["A) P1QV", "B) P1QW", "C) P1QU", "D) PQ1V"],
+    "answer": "A",
+    "explanation": "P stays. Number decreases: 5, 4, 3, 2 -> 1. Q stays. Last letter: R, S, T, U -> V. Result P1QV."
+  },
+  {
+    "id": 34,
+    "topic": "Mixed Series (Alphanumeric)",
+    "question": "Find the next term: 3F, 6G, 11I, 18L, ?",
+    "choices": ["A) 21O", "B) 25N", "C) 27P", "D) 27Q"],
+    "answer": "C",
+    "explanation": "Numbers: 3 (+3) 6 (+5) 11 (+7) 18. Next (+9) = 27. Letters: F (6) -> G (7) [+1]. G -> I (9) [+2]. I -> L (12) [+3]. Next L -> [+4] = 16 (P). Result 27P."
+  },
+  {
+    "id": 35,
+    "topic": "Mixed Series (Alphanumeric)",
+    "question": "What replaces the question mark? J2Z, K4X, I7V, ?, H16R, M22P",
+    "choices": ["A) L11T", "B) L12T", "C) L11S", "D) M11T"],
+    "answer": "A",
+    "explanation": "Middle Numbers: 2 (+2) 4 (+3) 7 (+4) 11 (+5) 16 (+6) 22. Missing is 11. Last Letters: Z (-2) X (-2) V (-2) T (-2) R. Missing is T. First Letters: J (+1) K (-2) I (+3) L (-4) H (+5) M. Missing is L. Result L11T."
+  },
+  {
+    "id": 36,
+    "topic": "Mixed Series (Alphanumeric)",
+    "question": "Find the missing term: B2CD, _____, BCD4, B5CD, BC6D",
+    "choices": ["A) B2C2D", "B) BC3D", "C) B2C3D", "D) BCD7"],
+    "answer": "B",
+    "explanation": "Pattern: The number shifts position and increases. B(2)CD. Next should be B(3)CD? No, position shifts. B C(3) D. Then B C D(4). Then B(5) C D. Then B C(6) D. Missing term is BC3D."
+  },
+  {
+    "id": 37,
+    "topic": "Mixed Series (Alphanumeric)",
+    "question": "C-3, E-5, G-7, I-9, ?, ?",
+    "choices": ["A) K-11, M-13", "B) J-10, K-11", "C) M-13, O-15", "D) K-11, L-13"],
+    "answer": "A",
+    "explanation": "Letters are skipping 1 (C, E, G, I -> K, M). Numbers correspond to alphabet position (C=3, E=5). K=11, M=13."
+  },
+  {
+    "id": 38,
+    "topic": "Mixed Series (Alphanumeric)",
+    "question": "Z1A, X2D, V6G, T21J, R88M, ?",
+    "choices": ["A) P445P", "B) N445P", "C) P264P", "D) P445Q"],
+    "answer": "A",
+    "explanation": "First Letter: Z, X, V, T, R (-2). Next P. Last Letter: A(+3)D(+3)G(+3)J(+3)M(+3)P. Next P. Middle Number: 1, 2, 6, 21, 88. Logic: 1x1+1=2. 2x2+2=6. 6x3+3=21. 21x4+4=88. Next 88x5+5. 88x5=440. +5=445. Result P445P."
+  },
+  {
+    "id": 39,
+    "topic": "Mixed Series (Alphanumeric)",
+    "question": "Find the wrong term: 1CV, 5FU, 9IT, 15LS, 17OR",
+    "choices": ["A) 5FU", "B) 15LS", "C) 9IT", "D) 17OR"],
+    "answer": "B",
+    "explanation": "Numbers: 1 (+4) 5 (+4) 9 (+4) 13 (+4) 17. The term 15LS has 15, should be 13. Letters: C(+3)F(+3)I(+3)L(+3)O. L is correct. V(-1)U(-1)T(-1)S(-1)R. S is correct. The number 15 is wrong."
+  },
+  {
+    "id": 40,
+    "topic": "Mixed Series (Alphanumeric)",
+    "question": "Q1F, S2E, U6D, W21C, ?",
+    "choices": ["A) Y44B", "B) Y66B", "C) Y88B", "D) Z88B"],
+    "answer": "C",
+    "explanation": "Letters 1: Q (+2) S (+2) U (+2) W (+2) Y. Letters 3: F (-1) E (-1) D (-1) C (-1) B. Numbers: 1, 2, 6, 21. Pattern: 1x1+1=2. 2x2+2=6. 6x3+3=21. Next: 21x4+4 = 88. Result Y88B."
+  }
+]
